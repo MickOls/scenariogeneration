@@ -77,5 +77,5 @@ prettyprint(sce.get_element())
 sce.write_xml(os.path.basename(__file__).replace('.py','.xosc'))
 
 # uncomment the following lines to display the scenario using esmini
-# from scenariogeneration import esmini
-# esmini(sce,os.path.join('esmini'))
+from scenariogeneration import esmini
+esmini(sce,os.path.join('esmini'))

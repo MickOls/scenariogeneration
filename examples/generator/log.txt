@@ -1,0 +1,34 @@
+esmini GIT REV: 2d953a8+
+esmini GIT TAG: 
+esmini GIT BRANCH: master
+esmini BUILD VERSION: N/A - client build
+Loading CCRs75.xosc (v1.1)
+OpenDRIVE: C:\Users\AndersTh\Documents\GitHub\scenariogeneration\examples\generator\CCRs_scsenarios\xodr\CCRs0.xodr
+Scenegraph: None
+0.000: Init Ego LongitudinalAction standbyState -> endTransition -> completeState
+0.000: Ego New position:
+0.000: Pos(25.00, -0.60, 0.00) Rot(0.00, 0.00, 0.00) roadId 1 laneId -1 offset 0.90 t -0.60
+0.000: Init Ego TeleportAction standbyState -> startTransition -> runningState
+0.000: Init Target1 LongitudinalAction standbyState -> endTransition -> completeState
+0.000: Target1 New position:
+0.000: Pos(62.50, -1.50, 0.00) Rot(0.00, 0.00, 0.00) roadId 1 laneId -1 offset 0.00 t -1.50
+0.000: Init Target1 TeleportAction standbyState -> startTransition -> runningState
+0.000: Init Ego TeleportAction runningState -> endTransition -> completeState
+0.000: Init Target1 TeleportAction runningState -> endTransition -> completeState
+0.000: No scenegraph 3D model loaded. Generating a simplistic one...
+0.010: Trigger /------------------------------------------------
+0.010: starttrigger == true, 0.0100 > 0.00 edge: rising
+0.010: Trigger  ------------------------------------------------/
+0.010: ccrm act standbyState -> startTransition -> runningState
+1.006: Trigger /------------------------------------------------
+1.006: starttrigger == true, 1.0060 > 1.00 edge: rising
+1.006: Trigger  ------------------------------------------------/
+1.023: newspeed standbyState -> startTransition -> runningState
+1.023: egospeedchange standbyState -> startTransition -> runningState
+6.012: egospeedchange complete after 1 execution
+6.028: newspeed runningState -> endTransition -> completeState
+6.028: egospeedchange runningState -> endTransition -> completeState
+13.001: Trigger /------------------------------------------------
+13.001: stop_simulation == true, 13.0010 > 13.00 edge: rising
+13.001: Trigger  ------------------------------------------------/
+Closing

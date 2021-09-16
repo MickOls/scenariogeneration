@@ -1,0 +1,25 @@
+esmini GIT REV: 2d953a8+
+esmini GIT TAG: 
+esmini GIT BRANCH: master
+esmini BUILD VERSION: N/A - client build
+Loading python_scenario.xosc (v1.1)
+OpenDRIVE: ../xodr/e6mini.xodr
+Scenegraph: None
+0.000: Init Ego LongitudinalAction standbyState -> endTransition -> completeState
+0.000: Ego New position:
+0.000: Pos(8.08, 24.97, -0.01) Rot(1.57, 0.00, 0.00) roadId 0 laneId -3 offset 0.00 t -8.00
+0.000: Init Ego TeleportAction standbyState -> startTransition -> runningState
+0.000: Init Target1 LongitudinalAction standbyState -> endTransition -> completeState
+0.000: Target1 New position:
+0.000: Pos(4.48, 14.98, -0.00) Rot(1.57, 0.00, 0.00) roadId 0 laneId -2 offset 0.00 t -4.42
+0.000: Init Target1 TeleportAction standbyState -> startTransition -> runningState
+0.000: Init Ego TeleportAction runningState -> endTransition -> completeState
+0.000: Init Target1 TeleportAction runningState -> endTransition -> completeState
+0.000: Trigger /------------------------------------------------
+0.000: Trigger  ------------------------------------------------/
+0.000: act_empty standbyState -> startTransition -> runningState
+0.000: No scenegraph 3D model loaded. Generating a simplistic one...
+10.006: Trigger /------------------------------------------------
+10.006: stop_simulation == true, 10.0060 > 10.00 edge: rising
+10.006: Trigger  ------------------------------------------------/
+Closing

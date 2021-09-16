@@ -162,10 +162,13 @@ class Scenario(ScenarioGenerator):
 
 if __name__ == '__main__':
     sce = Scenario()
-    # s.print_permutations()
-    files = sce.generate('CCRm_scsenarios')
+    sce.print_permutations()
+    files = sce.generate('CCRm_scsenarios',None,False)
 
     # uncomment the following lines to display the scenario using esmini
-    # from scenariogeneration import esmini
-    # esmini(sce,os.path.join('esmini'))
-
+    from scenariogeneration import esmini
+#    for i in range(len(sce.all_permutations)):
+#        print(sce.all_permutations[i])
+#        esmini(sce,os.path.join('..\..\..\esmini'),'60 60 800 400', False, False,False,'',i)
+#    
+    esmini(sce,os.path.join('..\..\..\esmini'))

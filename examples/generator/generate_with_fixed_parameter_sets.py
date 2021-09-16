@@ -9,6 +9,8 @@ from scenariogeneration import xodr
 from scenariogeneration import xosc, prettyprint
 from scenariogeneration import ScenarioGenerator
 
+import os
+
 class Scenario(ScenarioGenerator):
     def __init__(self):
         ScenarioGenerator.__init__(self)
@@ -64,4 +66,10 @@ class Scenario(ScenarioGenerator):
 if __name__ == "__main__":
     s = Scenario()
     s.print_permutations()
-    s.generate('my_scenarios')
+    s.generate('my_scenarios',None,False)
+    # uncomment the following lines to display the scenario using esmini
+    from scenariogeneration import esmini
+    for i in range(len(s.all_permutations)):
+        print(s.all_permutations[i])
+        esmini(s,os.path.join('..\..\..\esmini'),'60 60 800 400', False, False,False,'',i)
+
